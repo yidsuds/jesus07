@@ -1,16 +1,37 @@
 ---
-
+// Archivo: src/pages/index.astro
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Sobre mí">
+  <h1 class="text-4xl font-bold mb-40">Jesús Ramírez</h1>
+  <section class="mt-6 text-center">
+    <h2 class="text-2xl font-semibold mb-10">Sobre mí</h2>
+    <p class="text-lg mb-20 mx-40">
+      Aficionado a la ingeniería de datos y la infraestructura de redes,
+      abriéndome el mundo laboral, dispuesto a buscar y entregar soluciones a
+      problemas en el área de TI y así ayudar con la optimización y la mejora de
+      la empresa u organización que lo requiera. Además del área laboral, soy
+      aficionado a la historia y de la ciencia en general, fanático de leer e
+      investigar sobre principios de física, química y biología, además de
+      sucesos históricos que cambiaron el mundo.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-10">Experiencia</h2>
+    <p class="text-lg mb-20 mx-40">
+      Me he desempeñado en el área de gestión de bases de datos y el diseño de
+      front-end, además de revisión de códigos de pequeños proyectos para buscar
+      posibles errores.
+    </p>
+  </section>
+
+  <div class="mt-8 text-center">
+    <a
+      href="/Proyectos" 
+      class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+    >
+      Ver Proyectos
+    </a>
+  </div>
+</Layout>
+
