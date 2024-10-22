@@ -1,0 +1,35 @@
+---
+title: "Desarrollo de Sistema Contable en Azure con Terraform"
+
+---
+
+# Sistema Contable en Azure usando Terraform
+
+En este proyecto, implementé un sistema contable utilizando **Terraform** para gestionar la infraestructura en **Azure**. El objetivo era automatizar la creación y configuración de todos los recursos necesarios para el despliegue de un sistema contable escalable y seguro en la nube.
+
+## Descripción del Proyecto
+
+El sistema está diseñado para manejar operaciones contables de pequeñas y medianas empresas, utilizando servicios como **Azure Virtual Machines** para el backend, **Azure SQL Database** para el almacenamiento de datos y **Azure Storage** para el manejo de archivos y reportes. Todo esto es gestionado mediante la infraestructura como código con Terraform, lo que garantiza que el entorno sea repetible y fácil de escalar.
+
+## Herramientas y Tecnologías
+
+- **Terraform**: Utilizado para la gestión de infraestructura como código.
+- **Azure**: Plataforma en la que se desplegó todo el sistema.
+- **Azure SQL Database**: Base de datos relacional para almacenar la información contable.
+- **Azure Storage**: Almacenamiento de archivos y respaldos.
+- **Azure Virtual Machines**: Para el despliegue de aplicaciones y servidores.
+
+## Características Principales
+
+- **Despliegue automatizado**: Utilizando scripts de Terraform para crear y configurar los recursos en Azure.
+- **Escalabilidad**: Capacidad de añadir más máquinas virtuales y bases de datos conforme el sistema lo requiera.
+- **Seguridad**: Uso de grupos de seguridad de red (NSG) y cifrado en las bases de datos y almacenamiento.
+
+## Proceso de Implementación
+
+1. **Definición de la infraestructura**: Utilizando los módulos de Terraform para Azure, se definieron los recursos como redes, máquinas virtuales, y bases de datos.
+2. **Provisionamiento**: Cada recurso fue aprovisionado automáticamente mediante los comandos de Terraform, garantizando que todo el sistema se configurara correctamente en pocos minutos.
+3. **Pruebas y ajustes**: Realicé pruebas de carga y ajusté la infraestructura para optimizar el rendimiento y costos del sistema.
+4. **Monitoreo y Mantenimiento**: Integración con **Azure Monitor** y **Azure Log Analytics** para supervisar el rendimiento y estado del sistema.
+
+
